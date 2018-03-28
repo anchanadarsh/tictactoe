@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+$font-primary:Montserrat;
+$color-primary: #009688;
+$color-dark:#263238;
+$color-light:#cfd8dc;
+$color-black:black;
+$color-white:white;
+
+$color-green:#64DD17;
+$color-red:#EF5350;
+
+body {
+    font-family: $font-primary;
+    color: $color-white;
+    font-size: 16px;
+    background: $color-black;
+}
+
+.btn-bingo-go {
+    color: $color-black;
+    background-color: $color-green;
+    border-color: $color-green;
+}
+
+#winModal {
+    color: black;
+    .modal-dialog {
+        top: 40%;
+        transform: translateY(-50%);
+    }
+}
+
+input {
+    margin: auto;
+    outline: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10px;
+    width: 120px;
+    padding-left: 15px;
+    border: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+}
