@@ -20,13 +20,9 @@
     <section ng-controller="xoController" id="section-home1" class="container-fluid text-center p-lr-none" style="height:100vh">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                    <div class="row">
-                        <div class="ttt-box">
-                            <div ng-repeat="tiles in tttTiles track by $index" ng-click="tileClick($index)" class="col-xs-4 p-lr-none tileParent">
-                                <div class="tiles" id="tile_{{$index}}"><span>{{tiles}}</span></div>
-                            </div>
-                        </div>
+                <div class="ttt-box">
+                    <div ng-repeat="tiles in tttTiles track by $index" ng-click="tileClick($index)" class="col-xs-4 p-lr-none tileParent">
+                        <div class="tiles" id="tile_{{$index}}"><span>{{tiles}}</span></div>
                     </div>
                 </div>
             </div>
