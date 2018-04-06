@@ -1,0 +1,25 @@
+.slider-one .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+slider-one .prev23 {
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+slider-one .next23 {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+slider-one h5.text-center.slider-one-subhead {
+    width: calc(100% - 150px);
+    margin: auto;
+}
