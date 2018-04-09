@@ -61,4 +61,8 @@ input {
         color: $color-black;
         text-transform: uppercase;
     }
+    .tile-active {
+        background: $color-primary;
+        color: $color-light;
+    }
 }

@@ -38,7 +38,7 @@ xo.controller("xoController", ['$scope', function ($scope) {
                 $scope.c2[l] = $scope.tttTiles[(l * 3) + 1];
                 $scope.c3[l] = $scope.tttTiles[(l * 3) + 2];
                 $scope.d1[l] = $scope.tttTiles[(l * 3) + l];
-                $scope.d2[l] = $scope.tttTiles[l * 2];
+                $scope.d2[l] = $scope.tttTiles[(l + 1) * 2];
                 console.log("r1 : " + $scope.r1);
                 console.log("r2 : " + $scope.r2);
                 console.log("r3 : " + $scope.r3);
@@ -47,41 +47,56 @@ xo.controller("xoController", ['$scope', function ($scope) {
                 console.log("c3 : " + $scope.c3);
                 console.log("d1 : " + $scope.d1);
                 console.log("d2 : " + $scope.d2);
-                console.log($scope.d2[1]);
             }
 
             if (($scope.r1[1] == 'X') && ($scope.r1[2] == 'X') && ($scope.r1[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_0,#tile_1,#tile_2').addClass('tile-active');
             } else if (($scope.r2[1] == 'X') && ($scope.r2[2] == 'X') && ($scope.r2[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_3,#tile_4,#tile_5').addClass('tile-active');
             } else if (($scope.r3[1] == 'X') && ($scope.r3[2] == 'X') && ($scope.r3[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_6,#tile_7,#tile_8').addClass('tile-active');
             } else if (($scope.c1[1] == 'X') && ($scope.c1[2] == 'X') && ($scope.c1[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_0,#tile_3,#tile_6').addClass('tile-active');
             } else if (($scope.c2[1] == 'X') && ($scope.c2[2] == 'X') && ($scope.c2[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_1,#tile_4,#tile_7').addClass('tile-active');
             } else if (($scope.c3[1] == 'X') && ($scope.c3[2] == 'X') && ($scope.c3[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_2,#tile_5,#tile_8').addClass('tile-active');
             } else if (($scope.d1[1] == 'X') && ($scope.d1[2] == 'X') && ($scope.d1[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_0,#tile_4,#tile_8').addClass('tile-active');
             } else if (($scope.d2[1] == 'X') && ($scope.d2[2] == 'X') && ($scope.d2[0] == 'X')) {
-                alert("X Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_6,#tile_4,#tile_2').addClass('tile-active');
             } else if (($scope.r1[1] == 'O') && ($scope.r1[2] == 'O') && ($scope.r1[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_0,#tile_1,#tile_2').addClass('tile-active');
             } else if (($scope.r2[1] == 'O') && ($scope.r2[2] == 'O') && ($scope.r2[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_3,#tile_4,#tile_5').addClass('tile-active');
             } else if (($scope.r3[1] == 'O') && ($scope.r3[2] == 'O') && ($scope.r3[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_6,#tile_7,#tile_8').addClass('tile-active');
             } else if (($scope.c1[1] == 'O') && ($scope.c1[2] == 'O') && ($scope.c1[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_0,#tile_3,#tile_6').addClass('tile-active');
             } else if (($scope.c2[1] == 'O') && ($scope.c2[2] == 'O') && ($scope.c2[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_1,#tile_4,#tile_7').addClass('tile-active');
             } else if (($scope.c3[1] == 'O') && ($scope.c3[2] == 'O') && ($scope.c3[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_2,#tile_5,#tile_8').addClass('tile-active');
             } else if (($scope.d1[1] == 'O') && ($scope.d1[2] == 'O') && ($scope.d1[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_0,#tile_4,#tile_8').addClass('tile-active');
             } else if (($scope.d2[1] == 'O') && ($scope.d2[2] == 'O') && ($scope.d2[0] == 'O')) {
-                alert("O Wins");
+                jQuery('.tiles').removeClass('tile-active');
+                jQuery('#tile_6,#tile_4,#tile_2').addClass('tile-active');
             }
 
 

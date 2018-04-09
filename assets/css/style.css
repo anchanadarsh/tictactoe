@@ -43,5 +43,8 @@ input {
     font-size: 68px;
     color: black;
     text-transform: uppercase; }
+  .ttt-box .tile-active {
+    background: #009688;
+    color: #cfd8dc; }
 
 /*# sourceMappingURL=style.css.map */
